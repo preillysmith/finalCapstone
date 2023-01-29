@@ -1,0 +1,147 @@
+body {
+    /*Font and colour for the body of each page.*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: lightslategray;
+    font-size: 20px;
+}
+
+main {
+    /*width for the main of each page.*/
+    margin: auto;
+    width: 80%;
+}
+
+/*Headings.*/
+h1{
+    border: 3px solid #ccc;
+    background: #eee;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+h2{
+    border: 3px solid #ccc;
+    background: #eee;  
+    margin: auto;
+    width: 40%;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+/*all images with borders.*/
+img {
+    border: 0.5cm;
+    border: 3px solid #ccc;
+    border-radius: 25px;
+}
+
+/*Navagation box.*/
+nav{
+    padding: 1px;
+    font-weight: bold;
+}
+
+/*List formatting.*/
+ul.horizontal-list li {
+    font-size: 25px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 5px;
+    padding: 1px;
+}
+
+/*quote.*/
+div.quote{
+    padding: 1px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*Styling for the footer.*/
+footer {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Styling the table.*/
+table{
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+/*Styling for the submission form.*/
+div.form{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    text-align: center;
+}
+
+form{
+    padding: 5px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+ul.menulist li {
+    padding: 5px;
+}
+
+/*Formatting for the menu page.*/
+section{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 0.5cm;
+    border: 3px solid #ccc;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.save{
+    font-weight: bold;
+    border: 0.5cm;
+    border: 3px solid #ccc;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+
+#folderlist li {
+    padding: 10px;
+}
+
+#comment-box p {
+    padding: 5px;
+    font-style: italic;
+}
+
+.like {
+    padding: 20px;
+    font-weight: bold;
+    border: 0.5cm;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+/*Formatting for the like button*/ 
+[value="Like"] {
+    background-color: gray;
+    color: black;
+}
+[value="Liked"] {
+    background-color: lightblue;
+    color: black;
+}

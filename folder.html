@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Folder" content="width=device-width, initial-scale=1.0">
+    <link href = "restaurantStyle.css" rel = "stylesheet" type = "text/css">
+    <title>My Folder</title>
+</head>
+<!--The main folder. -->
+<body onload="myFolderLoad()">
+    <h1 id="theheader">My Folder</h1>
+    <div>
+        <section>
+            <h2>My items:</h2>
+            <ul id="folderlist">
+            </ul>
+        </section> 
+    </div>
+    <!--Navigation to the other pages, including the top of the page. -->
+    <nav>
+        <ul class="horizontal-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav> 
+    <br>
+
+    <!--The footers. -->
+    <footer>
+        <p id="sigPRS"><br>Created by PRS</p>
+        <br>
+        <!--Like page. -->
+        <form>
+            <input class="like" type="button" id="folderLike" value="Like"
+            onclick="toggleLike(this)">
+        </form>
+        <br>
+
+    </footer>
+    <script type='text/javascript' src='./main.js'></script>
+</body>
+</html>

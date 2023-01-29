@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="homepage" content="width=device-width, initial-scale=1.0">
+    <link href = "restaurantStyle.css" rel = "stylesheet" type = "text/css">
+    <title>Homepage</title>
+</head>
+
+<body onload="commentsLoad()">
+
+    <!-- The page header. -->
+    <header>
+        <h1>Welcome to Julius Restaurant!</h1>
+    </header>
+
+    <!-- The  photo. -->
+    <main>
+        <picture>
+            <img src="https://411.ca/blog/wp-content/uploads/2017/07/Canoe.jpg" alt="Welcome Photo" style="width:800px;">
+        </picture>
+
+        <br>
+
+        <!-- The quote. -->
+        <div class="quote">
+            <p>"The best restaurant I've ever been to." - Mr. James</p>
+            <button class="save" data-title="Quote in index page - " data-text="The best restaurant I've ever been to - Mr. James" data-type="text">Save for later</button>
+        </div>
+        
+        <br>
+
+        <!-- Home page text. -->
+        <article>
+            <H2>About Julius Restaurant</H2>
+            <p>Julius was founded in 1992 by Mr. Reilly-Smith in the bustling centre of Winchester to provide residents with a cosy, authentic Italian eaterie on their doorsteps. Inspired by his time living in the rolling Tuscan hills, Reilly-Smith sought to recreate the culinary delights of the Italian countryside, and this mission continues today.</p> 
+            <p>Visit our restaurant to indulge in the best Italian cuisine in Winchester or let us help you celebrate a special occasion with your friends and loved ones. Our varied and flexible menu suits all dietary requirements and tastes.</p> 
+            <button class="save" data-title="Text in index page - " data-text="Julius was founded in 1992 by Mr. Reilly-Smith in the bustling centre of Winchester to provide residents with a cosy, authentic Italian eaterie on their doorsteps. Inspired by his time living in the rolling Tuscan hills, Reilly-Smith sought to recreate the culinary delights of the Italian countryside, and this mission continues today. Visit our restaurant to indulge in the best Italian cuisine in Winchester or let us help you celebrate a special occasion with your friends and loved ones. Our varied and flexible menu suits all dietary requirements and tastes." data-type="text">Save for later</button>
+        </article>
+        
+
+        <!--Navigation to the other pages. -->
+        <nav>
+            <ul class="horizontal-list">
+            <li><a href="menu.html">The Menu</a></li>
+            <li><a href="folder.html">My Folder</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav> 
+        <br>
+
+        <!--Comments. -->
+        <div id="commentEntry">
+            <h3>Leave us a comment</h3>
+            <form>
+                <textarea id="name" placeholder="Add Your Name"></textarea>
+                <br>
+               <textarea cols="30" rows="10" id="comment" placeholder="Add Your Comment"></textarea>
+               <div>
+                   <input id="submit" type="button" value="Comment" onclick="addComment()">
+               </div> 
+            </form>
+        </div>
+
+        <div id ="commentsDisplay">
+            <h3>Comments</h3>
+            <div id="comment-box">
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- The footer. -->
+    <footer>
+        <br>
+        <picture>
+            <img src="https://cdn.pixabay.com/photo/2014/07/31/22/02/restaurant-406972_960_720.jpg" alt="Outro Photo" style="width:400px;">
+        </picture>
+        <br>
+        <button class="save" data-title="Image in index page" data-text="https://cdn.pixabay.com/photo/2014/07/31/22/02/restaurant-406972_960_720.jpg" data-type="image">Save for later</button>
+        <p id="sigPRS"><br>Created by PRS</p>
+        <br>
+        <!--Like page. -->
+        <form>
+            <input class="like" type="button" id="indexLike" value="Like"
+            onclick="toggleLike(this)">
+        </form>
+        <br>
+    </footer>
+
+    <script type='text/javascript' src='./main.js'></script>
+</body>
+</html>

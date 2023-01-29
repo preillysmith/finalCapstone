@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="contact" content="width=device-width, initial-scale=1.0">
+    <link href = "restaurantStyle.css" rel = "stylesheet" type = "text/css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Contact us!</h1>
+    </header>
+
+    <!-- The contact us table, with link for mailto item. -->
+     <table>
+        <tbody>
+            <tr>
+                <th>Email:</th>
+                <td><a href="mailto:juliusrestaurant@gmail.com">juliusrestaurant@gmail.com</a></td>
+            </tr>
+            <tr>
+                <th>Telephone:</th>
+                <td>07334 595349</td>
+            </tr>
+            <tr>
+                <th>Contact form:</th>
+                <td>see form below</td>
+            </tr>
+        </tbody>
+    </table> 
+
+    <br>
+
+    <!-- The contact us form. -->
+    <div class="form">
+        <form>
+            <label>Name:</label>
+            <br>
+            <textarea placeholder="Please enter your name." id="name"></textarea> 
+            <br>
+            <label>Message:</label>
+            <br>
+            <textarea cols="30" rows="10" placeholder="Please enter your Message." id="message"></textarea> 
+            <br>
+            <p>Sign up to our newsletter?</p>
+            <input type="radio" value="Y" id="newsletterY" name="sub">
+            <label>Yes</label>
+            <input type="radio" value="N" checked id="newsletterN" name="sub">
+            <label>No</label>
+            <br><br>
+            <button onclick="sendMessage()">Send</button>
+        </form>
+    </div>
+
+    <!--Navigation to the other pages. -->
+    <nav>
+        <ul class="horizontal-list">
+        <li><a href="menu.html">The Menu</a></li>
+        <li><a href="folder.html">My Folder</a></li>
+        <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav> 
+
+    <!-- The footer. -->
+    <footer>
+        <br>
+        <picture>
+            <img src="https://www.publicdomainpictures.net/pictures/200000/velka/restaurant-14744450336tb.jpg" alt="Outro Photo" style="width:400px;">
+        </picture>
+        <br>
+        <button class="save" data-title="Image in contact" data-text="https://www.publicdomainpictures.net/pictures/200000/velka/restaurant-14744450336tb.jpg" data-type="image">Save for later</button>
+        <p id="sigPRS"><br>Created by PRS</p>
+        <br>
+        <!--Like page. -->
+        <form>
+            <input class="like" type="button" id="contactLike" value="Like"
+            onclick="toggleLike(this)">
+        </form>
+        <br>
+    </footer>
+
+    <script type='text/javascript' src='./main.js'></script>
+</body>
+</html>
